@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+require("dotenv/config");
 
 // TODO after implement atlas change it
 const DB_CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
