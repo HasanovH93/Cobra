@@ -1,11 +1,11 @@
 require("dotenv").config();
 const router = require("express").Router();
-const CoinGecko = require("coingecko-api");
+const coinGecko = require("coingecko-api");
 const { SEARCH_VALUES: searchedTarget } = require("../helpers/utils");
 const coinsImages = require("../helpers/coinsImages.json");
 
 router.post("/id", async (req, res) => {
-  const CoinGeckoClient = new CoinGecko();
+  const CoinGeckoClient = new coinGecko();
   const coinSymbol = req.body.symbol.toUpperCase();
   let coinName = req.body.id;
 
