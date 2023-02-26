@@ -1,4 +1,4 @@
-require("dotenv/config");
+require("dotenv").config();
 const Web3 = require("web3");
 const https = require("https");
 const router = require("express").Router();

@@ -1,4 +1,4 @@
-require("dotenv/config");
+require("dotenv").config();
 const router = require("express").Router();
 const CoinGecko = require("coingecko-api");
 const { SEARCH_VALUES: searchedTarget } = require("../helpers/utils");

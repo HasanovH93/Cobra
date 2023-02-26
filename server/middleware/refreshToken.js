@@ -1,5 +1,6 @@
 const UserMetaMask = require("../models/UserMetaMask");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 const authenticateToken = (req, res, next) => {
   const accessToken = req.cookies.zth_aSt_1xRg9Jd;
