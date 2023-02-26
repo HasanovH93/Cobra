@@ -1,5 +1,5 @@
 require("dotenv").config();
-import Web3 from "web3";
+const Web3 = require('web3');
 const https = require("https");
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
