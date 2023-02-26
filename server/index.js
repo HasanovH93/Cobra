@@ -1,4 +1,4 @@
-require("dotenv/config");
+require("dotenv").config();
 const express = require("express");
 const databaseConfig = require("./config/database");
 const expressConfig = require("./config/express");
@@ -11,6 +11,5 @@ async function start() {
   await databaseConfig(app);
   routerConfig(app);
 
-  const PORT = process.env.PORT
-  app.listen(PORT, () => console.log(`App start ==> http://localhost:3000`));
+  app.listen(process.env.PORT, () => console.log(`REST Service Working`));
 }
